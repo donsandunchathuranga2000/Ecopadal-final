@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/payment_success_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_card_background"
+        android:elevation="6dp"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <!-- Payment Success Image -->
+
+
+        <!-- Payment Success Message -->
+
+        <ImageView
+            android:id="@+id/image_payment_success"
+            android:layout_width="150dp"
+            android:layout_height="381dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="74dp"
+            android:src="@drawable/paymentcheck" />
+
+        <TextView
+            android:id="@+id/text_payment_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_payment_success"
+            android:layout_centerHorizontal="true"
+            android:text="Payment Successful"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Additional Information -->
+        <TextView
+            android:id="@+id/text_payment_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_payment_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Thank you for your payment!"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/continur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_payment_info"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="CONTINUE"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

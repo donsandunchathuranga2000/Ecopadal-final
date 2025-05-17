@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Distance">
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Current Biking Info Card -->
+    <RelativeLayout
+        android:id="@+id/biking_info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_card_background"
+        android:elevation="6dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_current_biking_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Biking Info"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_current_biking_info"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Distance"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00 Km"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/text_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/text_cost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.0.00"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_layout"
+            android:layout_marginTop="16dp"
+            android:text="Continue"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_clear_end_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Clear End Location"
+        android:src="@android:drawable/ic_menu_delete" />
+</RelativeLayout>

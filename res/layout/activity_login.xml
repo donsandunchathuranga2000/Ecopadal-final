@@ -1,0 +1,144 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Background Image -->
+   <ViewFlipper
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:flipInterval="2000"
+       android:autoStart="true"
+       android:inAnimation="@android:anim/slide_in_left"
+       android:outAnimation="@android:anim/slide_out_right">
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:src="@drawable/imageslogin"
+           android:layout_marginStart="150dp"
+           android:scaleType="fitCenter" />
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:src="@drawable/image3"
+           android:layout_marginStart="150dp"
+           android:scaleType="fitCenter" />
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:src="@drawable/images4"
+           android:layout_marginStart="150dp"
+           android:scaleType="fitCenter" />
+   </ViewFlipper>
+
+
+
+    <!-- Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="30dp"
+            android:text="Ecopadal"
+            android:textColor="#3072E4"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="93dp"
+            android:layout_marginBottom="160dp"
+            android:text="Hi mate, Sign in Now"
+            android:textSize="16sp"
+            android:textColor="#099e51" />
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="350dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3072E4"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="350dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ffffff"
+            android:text="Don't have an account? Sign Up now"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvOrContinueWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="---------------  Or    ---------------"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/googleSignInButton"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/gg" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:src="@drawable/facebook" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

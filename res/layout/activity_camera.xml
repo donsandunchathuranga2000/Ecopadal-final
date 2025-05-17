@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_shutter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="Please take a clear and bright photo of the scooter !!"
+        android:textColor="#D60A0A"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_shutter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/shutter"
+        android:backgroundTint="#2196F3"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+
+
+</RelativeLayout>
